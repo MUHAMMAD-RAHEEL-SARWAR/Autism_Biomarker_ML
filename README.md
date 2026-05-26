@@ -85,18 +85,17 @@ A_32_P184330, A_23_P21382, A_24_P912765, A_24_P666340, A_24_P642758, A_32_P19018
 
 Critical Takeaway: Prior to incorporating class-balancing mechanisms, the pipeline suffered heavily from minority class under-sampling bias, yielding a poor clinical sensitivity of 42.9%. Activating an inverse-frequency balanced Support Vector Machine configuration successfully raised clinical sensitivity to 90.5%. This optimization meets real-world medical screening standards, ensuring that affected children are effectively flagged for early clinical support while managing a controlled false-positive rate.
 
-**Repository Structure & Usage**
+## **Repository Structure & Usage**
 
 To implement this pipeline in a production runtime environment, arrange the project directory as follows:
 
 autism-transcriptomic-pipeline/  
-├── autism_balanced_model.pkl # Frozen production-grade classification model  
-├── autism_balanced_scaler.pkl # Pre-computed scaling normalization matrices  
-├── README.md # General markdown project landing documentation  
-└── notebooks/  
-└── autism_diagnostic_pipeline.ipynb # Comprehensive production notebook script
+├── autism_balanced_model.pkl         # Frozen production-grade classification model  
+├── autism_balanced_scaler.pkl        # Pre-computed scaling normalization matrices  
+├── README.md                         # General markdown project landing documentation  
+├── autism_diagnostic_pipeline.ipynb  # Comprehensive production notebook script
 
-**Execution Instructions**
+## **Execution Instructions**
 
 The entire pipeline is completely self-contained. To run the diagnostic process, follow these steps:
 
